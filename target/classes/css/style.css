@@ -1,0 +1,26 @@
+
+.sidebar {
+    -fx-background-color: #1d1b1fff;
+    -fx-padding: 20;
+}
+
+
+.sidebar-label {
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+
+.sidebar-button {
+    -fx-pref-width: 160;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: #333232;
+}
+.content-pane {
+    -fx-background-color: #f0f0f0;
+}
