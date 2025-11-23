@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="srms.ui.ReportsController">
-    <children>
-        <Label text="Reports Page" layoutX="20" layoutY="20" />
-    </children>
-</AnchorPane>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="srms.ui.ReportsController"
+      spacing="10" padding="20">
+
+    <Label text="Reports" style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+    <Button text="Generate Students Report" onAction="#studentsReport" />
+    <Button text="Generate Courses Report" onAction="#coursesReport" />
+    <Button text="Generate Enrollments Report" onAction="#enrollmentsReport" />
+
+</VBox>

@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="srms.ui.StudentsController">
-    <children>
-        <Label text="Students Page" layoutX="20" layoutY="20" />
-    </children>
-</AnchorPane>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="srms.ui.StudentsController"
+      spacing="10" padding="20">
+
+    <HBox spacing="10">
+        <Label text="Students" style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+        <Pane HBox.hgrow="ALWAYS"/>
+        <Button text="Add Student" onAction="#addStudent"/>
+        <Button text="Edit" onAction="#editStudent"/>
+        <Button text="Delete" onAction="#deleteStudent"/>
+    </HBox>
+
+    <TableView fx:id="tableStudents" prefHeight="500">
+        <columns>
+            <TableColumn fx:id="colRegNo" text="Reg No" prefWidth="120"/>
+            <TableColumn fx:id="colFirstName" text="First Name" prefWidth="150"/>
+            <TableColumn fx:id="colLastName" text="Last Name" prefWidth="150"/>
+            <TableColumn fx:id="colEmail" text="Email" prefWidth="200"/>
+        </columns>
+    </TableView>
+
+</VBox>
