@@ -1,26 +1,35 @@
-
 .sidebar {
-    -fx-background-color: #1d1b1fff;
-    -fx-padding: 20;
+  -fx-background-color: #1d1b1fff;
+  -fx-padding: 20;
+  -fx-spacing: 40;
+  -fx-font-family: "Arial", Tahoma, Geneva, Verdana, sans-serif;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 2);
 }
-
 
 .sidebar-label {
-    -fx-text-fill: white;
-    -fx-font-size: 22px;
-    -fx-font-weight: bold;
+  -fx-text-fill: white;
+  -fx-font-size: 20px;
+  -fx-text-alignment: START;
+  -fx-font-weight: bold;
+  -fx-effect: dropshadow(gaussian, rgba(41, 38, 38, 0.5), 4, 0, 2, 2);
+  -fx-letter-spacing: 1px;
+  -fx-wrap-text: true;
 }
 
-
 .sidebar-button {
-    -fx-pref-width: 160;
-    -fx-background-color: transparent;
-    -fx-text-fill: white;
+  -fx-pref-width: 160;
+  -fx-background-color: transparent;
+  -fx-text-fill: white;
+  -fx-font-size: 16px;
+  -fx-alignment: CENTER_LEFT;
+  -fx-text-fill: white;
+  -fx-effect: dropshadow(gaussian, rgba(41, 38, 38, 0.5), 4, 0, 2, 2);
+  -fx-font-weight: bold;
 }
 
 .sidebar-button:hover {
-    -fx-background-color: #333232;
+  -fx-background-color: #333232;
 }
 .content-pane {
-    -fx-background-color: #f0f0f0;
+  -fx-background-color: #f0f0f0;
 }
