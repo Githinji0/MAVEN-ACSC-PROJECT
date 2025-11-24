@@ -10,12 +10,13 @@ public class MainController {
     @FXML
     private StackPane contentPane;
 
-    // Load FXML pages into the content pane
     private void loadPage(String fxml) {
         try {
-            Node page = FXMLLoader.load(getClass().getResource("/ui/" + fxml));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/ui/" + fxml));
+            Node page = loader.load();
             contentPane.getChildren().setAll(page);
         } catch (Exception e) {
+            System.out.println("❌ Failed to load: " + fxml);
             e.printStackTrace();
         }
     }

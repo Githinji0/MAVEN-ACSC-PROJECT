@@ -1,7 +1,7 @@
 .sidebar {
   -fx-background-color: #1d1b1fff;
-  -fx-padding: 20;
-  -fx-spacing: 40;
+  -fx-padding: 20 15 20 15; 
+  -fx-spacing: 20;          
   -fx-font-family: "Arial", Tahoma, Geneva, Verdana, sans-serif;
   -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 2);
 }
@@ -22,7 +22,6 @@
   -fx-text-fill: white;
   -fx-font-size: 16px;
   -fx-alignment: CENTER_LEFT;
-  -fx-text-fill: white;
   -fx-effect: dropshadow(gaussian, rgba(41, 38, 38, 0.5), 4, 0, 2, 2);
   -fx-font-weight: bold;
 }
@@ -30,6 +29,7 @@
 .sidebar-button:hover {
   -fx-background-color: #333232;
 }
+
 .content-pane {
   -fx-background-color: #f0f0f0;
 }

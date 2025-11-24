@@ -23,7 +23,7 @@
 
     <!-- CENTER CONTENT AREA -->
     <center>
-        <StackPane fx:id="contentPane" style="-fx-background-color: #f0f0f0;" styleClass="content-pane"/>
+        <StackPane fx:id="contentPane"  styleClass="content-pane"/>
     </center>
 
 </BorderPane>
