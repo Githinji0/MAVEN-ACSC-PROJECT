@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
 
 <VBox xmlns="http://javafx.com/javafx"
-      xmlns:fx="http://javafx.com/fxml"
-      fx:controller="srms.ui.EnrollmentsController"
-      spacing="10" padding="20">
+    xmlns:fx="http://javafx.com/fxml"
+    fx:controller="srms.ui.EnrollmentsController"
+    spacing="10">
+
+    <padding>
+        <Insets All="20" />
+    </padding>
 
     <HBox spacing="10">
         <Label text="Enrollments" style="-fx-font-size: 22px; -fx-font-weight: bold;" />
-        <Pane HBox.hgrow="ALWAYS"/>
-        <Button text="Add Enrollment" onAction="#addEnrollment"/>
-        <Button text="Delete" onAction="#deleteEnrollment"/>
+        <Pane HBox.hgrow="ALWAYS" />
+        <Button text="Add Enrollment" onAction="#addEnrollment" />
+        <Button text="Delete" onAction="#deleteEnrollment" />
     </HBox>
 
     <TableView fx:id="tableEnrollments" prefHeight="500">
         <columns>
-            <TableColumn fx:id="colStudent" text="Student" prefWidth="150"/>
-            <TableColumn fx:id="colCourse" text="Course" prefWidth="150"/>
-            <TableColumn fx:id="colGrade" text="Grade" prefWidth="100"/>
-            <TableColumn fx:id="colDate" text="Date Enrolled" prefWidth="150"/>
+            <TableColumn fx:id="colStudent" text="Student" prefWidth="150" />
+            <TableColumn fx:id="colCourse" text="Course" prefWidth="150" />
+            <TableColumn fx:id="colGrade" text="Grade" prefWidth="100" />
+            <TableColumn fx:id="colDate" text="Date Enrolled" prefWidth="150" />
         </columns>
     </TableView>
 
